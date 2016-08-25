@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='dformat',
-    version='0.1',
+    version='0.1.2',
     packages=['dformat'],
     url='https://github.com/Haikson/dformat/',
     license='Apache 2',

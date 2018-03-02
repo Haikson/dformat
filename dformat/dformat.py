@@ -29,14 +29,14 @@ def dformat(src=None):
         return datetime.now()
 
     for datetime_format in datetime_formates:
-        date_time = format(src=src, fmt=datetime_format)
+        date_time = formating(src=src, fmt=datetime_format)
         if date_time is not None:
             return date_time
 
     return datetime.now()
 
 
-def format(src, fmt):
+def formating(src, fmt):
     try:
         return datetime.strptime(src, fmt)
     except ValueError:

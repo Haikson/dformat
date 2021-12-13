@@ -21,7 +21,9 @@ datetime_formates = [
 
 for datetime_format in datetime_formates:
     try:
-        print(dformat(datetime_format).strftime('%d.%m.%Y %H:%M:%S'))
+        dt = dformat(datetime_format)  # .strftime('%d.%m.%Y %H:%M:%S')
     except:
-        print(dformat(datetime_format).strftime('%d.%m.%Y'))
+        df = dformat(datetime_format)  # .strftime('%d.%m.%Y')
+        
+    assert isinstance(dt, datetime)
     #print(dformat(datetime_format))
